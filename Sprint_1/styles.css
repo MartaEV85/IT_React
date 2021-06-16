@@ -1,0 +1,131 @@
+* {
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.big-container {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/*<!--TOP CONTAINER *black background - HEADER*-->*/
+.header {
+    display: flex;
+    flex-flow: column nowrap;
+    
+    background-color: black;
+}
+
+.top-box{
+    display: flex;
+    flex-flow: row nowrap;
+
+    background-color: rgba(45,64,89,255);
+}
+
+.box1, .box2, .box3 {
+    background-color: rgba(234,84,85,255);
+    flex: 1;
+}
+
+.box2{
+    flex: 6;
+}
+
+.bottom-box{
+    background-color: rgba(240,123,63,255);
+}
+
+.box4{
+    background-color:rgba(254,212,96,255);
+}
+
+/*<!--MIDDLE CONTAINER *black background - ARTICLE-->*/
+
+.main {
+    display: flex;
+    background-color: black;
+}
+
+.article{
+    display: flex;
+    flex-flow: row wrap;
+    flex: 2;
+    background-color: rgba(78,78,106,255);
+}
+
+.content{
+    flex: 1 1 40%;
+    /* flex: 1 1 auto; */
+    background-color: #1f6cb0;
+}
+
+.content-bottom{
+    background-color: #70a3c4;
+    flex: 1 1 100%;
+}
+
+.side-box{
+    flex: 1;
+    background-color: #f73f52;
+}
+
+.side-text {
+    background-color: #feea85;
+    flex: 1;
+}
+
+/*<!--BOTTOM CONTAINER *black baackground- FOOTER -->*/
+
+footer{
+    background-color: black;
+}
+
+.footer-box {
+    background-color: #e6af2e;
+}
+
+/**************/
+/* RESPONSIVE*/
+/*************/
+
+/* desktop to tablet.
+Tablets, Ipads (portrait) 768px to 1024px.
+ Low Resolution Tablets and mobiles landscape 481px to 767px.
+*/
+
+@media (min-width: 480px) and (max-width: 1024px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        background-color: yellow;
+    } 
+}
+
+/* desktop to mobile.
+320px to 479px Portrait
+*/
+@media (min-width: 320px) and (max-width: 479px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        background-color: yellow;
+    } 
+
+    .top-box {
+        flex-direction: column;
+    }
+
+    .article {
+        flex-direction: column;
+        background-color: rgba(9,80,111,255) ;
+    }
+    .content{
+        background-color: rgba(97,149,156,255);
+    }
+
+    .content-bottom{
+        background-color: rgba(163,221,203,255);
+    }
+}
