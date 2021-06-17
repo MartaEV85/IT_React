@@ -1,0 +1,26 @@
+nav a {
+    float: left;
+    padding: 12px;
+    color: rgb(129,128,128);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+  
+nav a:hover {
+   color: rgb(43,35,35);
+   font-size: 17px;
+}
+
+.social a {
+    flex: 1;
+    text-align:center;
+    transition: all 0.3s ease;
+    color: rgb(129, 128, 128);
+    font-size: 16px;
+}
+  
+.social a:hover {
+    color:rgb(43, 35, 35);
+    font-size:17px;
+}
