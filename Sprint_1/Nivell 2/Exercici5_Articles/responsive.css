@@ -1,0 +1,39 @@
+/**************/
+/* RESPONSIVE - NO ACABAT*/
+/*************/
+
+/* desktop to tablet.
+Tablets, Ipads (portrait) 768px to 1024px.
+ Low Resolution Tablets and mobiles landscape 481px to 767px.
+*/
+
+@media (min-width: 480px) and (max-width: 1024px) {
+    .main {
+        flex-direction: column;
+    } 
+}
+
+/* desktop to mobile.
+320px to 479px Portrait
+*/
+@media (min-width: 320px) and (max-width: 479px) {
+    .main {
+        flex-direction: column;
+    } 
+
+    .top-box {
+        flex-direction: column;
+    }
+
+    .article {
+        flex-direction: column;
+        background-color: rgba(9,80,111,255) ;
+    }
+    .content{
+        background-color: rgba(97,149,156,255);
+    }
+
+    .content-bottom{
+        background-color: rgba(163,221,203,255);
+    }
+}

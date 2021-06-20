@@ -48,11 +48,12 @@ h2 {
 /*** Header ***/
 header {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     background-image: url(fondo.jpg);
     background-position: center;
     background-repeat:no-repeat;
     background-size:cover;
+    
   
     /* border: 2px solid blue; */
                                                            
@@ -61,10 +62,13 @@ header {
 .top-box {
     display: flex;
     flex-flow: row nowrap;
+    flex: 1 1 auto;
 }
 
 nav {
-    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 1 1 auto;
 }
   
 .quotes {

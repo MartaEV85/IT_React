@@ -1,5 +1,5 @@
 nav a {
-    float: left;
+    /* float: left; */
     padding: 12px;
     color: rgb(129,128,128);
     text-decoration: none;
@@ -13,7 +13,7 @@ nav a:hover {
 }
 
 .social a {
-    flex: 1;
+    flex: 1 1 auto;
     text-align:center;
     transition: all 0.3s ease;
     color: rgb(129, 128, 128);
