@@ -1,0 +1,145 @@
+* {
+    padding: 1vw;
+    margin: 1vw;
+    /* box-sizing: border-box; */
+    background-color: white;
+}
+
+/* .big-container {
+    display: flex;
+    flex-flow: column nowrap;
+   
+} */
+
+/*<!--TOP CONTAINER *black background - HEADER*-->*/
+.header {
+    display: flex;
+    flex-flow: column;
+    background-color: black;
+}
+
+.top-box{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    background-color: rgba(45,64,89,255);
+}
+
+.box1, .box3 {
+    background-color: rgba(234,84,85,255);
+    flex: 1;
+    /* width: 22%; */
+}
+
+.box2{
+    flex: 6;
+    /* width: 50%; */
+    background-color: rgba(234,84,85,255);
+}
+
+.bottom-box{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(240,123,63,255);
+}
+
+.box4{
+    background-color:rgba(254,212,96,255);
+    width: 100%;
+}
+
+/*<!--MIDDLE CONTAINER *black background - ARTICLE-->*/
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.article{
+    display: flex;
+    flex-flow: row wrap;
+    flex: 2;
+    /* width: 70%; */
+    background-color: rgba(78,78,106,255);
+    justify-content: space-between;
+}
+
+.content{
+    flex: 1 1 40%;
+    /* width: 40%; */
+    margin-bottom: 1vw;
+    background-color: #1f6cb0;
+}
+
+.content-bottom{
+    background-color: #70a3c4;
+    flex: 1 1 100%;
+    /* width: 100%; */
+}
+
+.side-box{
+    flex: 1;
+    background-color: #f73f52;
+}
+
+.side-text {
+    background-color: #feea85;
+    /* flex: 1; */
+}
+
+/*<!--BOTTOM CONTAINER *black baackground- FOOTER -->*/
+
+footer{
+    background-color: black;
+}
+
+.footer-box {
+    background-color: #e6af2e;
+}
+
+/**************/
+/* RESPONSIVE*/
+/*************/
+
+/* desktop to tablet.
+Tablets, Ipads (portrait) 768px to 1024px.
+ Low Resolution Tablets and mobiles landscape 481px to 767px.
+*/
+
+@media (min-width: 480px) and (max-width: 1024px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        background-color: yellow;
+    } 
+}
+
+/* desktop to mobile.
+320px to 479px Portrait
+*/
+@media (min-width: 320px) and (max-width: 479px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        background-color: yellow;
+    } 
+
+    .top-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article {
+        flex-direction: column;
+        background-color: rgba(9,80,111,255) ;
+    }
+    .content{
+        background-color: rgba(97,149,156,255);
+    }
+
+    .content-bottom{
+        background-color: rgba(163,221,203,255);
+    }
+}
