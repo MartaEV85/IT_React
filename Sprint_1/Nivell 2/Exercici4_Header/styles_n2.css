@@ -10,9 +10,11 @@ html{
 
 h1{
     font-family: 'Times New Roman', Times, serif;
-    color: rgba(237,165,167,0.6);
+    color: crimson;
     text-align: center;
-    background: rgba(201, 200, 200, 0.2);
+    /* color: rgba(237,165,167,0.6); */
+    /* text-align: center; */
+    /* background: rgba(201, 200, 200, 0.2); */
 }
 
 
@@ -20,45 +22,146 @@ h1{
 /*LAYOUT & FORMATTING*/
 /********/
 
-* {
-    padding: 5px;
-    margin: 3px;
-    box-sizing: border-box;
-}
+/* Small devices */
 
-.big-container {
-    display: flex;
-    flex-flow: column nowrap;
-}
-
-/*** Header ***/
-header {
-    display: flex;
-    flex-flow: column nowrap;
-    background-image: url(fondo.jpg);
+header{
+    background-image: url(../Exercici4_Header/fondo.jpg);
     background-position: center;
-    background-repeat:no-repeat;
-    background-size:1500px 650px;
-    margin:0;                                                             
-}
-
-.top-box {
+    background-repeat: no-repeat;
+    background-clip: border-box;
     display: flex;
-    flex-flow: row nowrap;
+    flex-direction: column;
 }
 
-nav {
+.top-box{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 1vw;
+} 
+
+.logo{
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: flex-end;
+    order: 0;
+    width: 60%;
+}
+
+#logo-img{
+    height: 8vh;
+}
+
+#header-nav{
+    order: 3;
     width: 100%;
 }
-  
-.quotes {
-    font-size: 1.5em;
-}
 
-/*** Main ***/
-
-.main {
+#navbar{
     display: flex;
-    background-color: #e4e4e4;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 2vh;
 }
 
+.li-el{
+    list-style-type: none;
+    font-size: min(2vh, 20pt);
+    font-weight: 500;
+    color: rgb(83, 79, 79);
+    width: 100%;
+    padding: 0.7vw;
+    text-align: center;
+    background-color: rgba(211, 211, 211,0.50);
+    box-shadow: 2px 2px 6px gray;
+    border-radius: 5px;
+    
+}
+
+.social{
+    margin: 0;
+    display:flex;
+    font-size: min(1.5vh, 15pt);
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    order: 1;
+    width: 10%;
+    height: 8vh;
+}
+
+.bottom-box{
+    background-color: lightgray;
+    display: flex;
+    opacity: 0.50;
+    justify-content: center;
+    margin: 0;
+    
+}
+
+.quotes{
+    font-size: 30pt;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 768px) {
+    header{
+        background-size: 180%;
+        padding: 0.75vw;
+        margin: 0.75vw;
+    }    
+
+    .top-box{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        height: 12vh;
+    }
+
+    .logo{
+        width: 10%;
+        align-self: center;
+        justify-content: flex-start;
+    }
+
+    #navbar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .li-el{
+        font-size: min(3vh, 15px);
+        background-color: transparent;
+        box-shadow: none;
+            
+    }
+
+    .social{
+        width: 10%;
+        order: 3;
+        align-content: flex-end;
+        margin-left: auto;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    header{
+        background-size: 120%;
+    }
+    
+    #header-nav{
+        max-width: min(60%, 800px);
+    }
+
+    .logo{
+        max-width: 8%;
+    }
+}

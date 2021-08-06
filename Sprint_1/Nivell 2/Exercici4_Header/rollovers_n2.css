@@ -1,13 +1,13 @@
-nav a {
+li a {
     float: left;
     padding: 12px;
-    color: rgb(129,128,128);
+    color: rgb(59, 57, 57);
     text-decoration: none;
     transition: all 0.3s ease;
     font-size: 16px;
 }
   
-nav a:hover {
+li a:hover {
    color: rgb(43,35,35);
    font-size: 17px;
 }
